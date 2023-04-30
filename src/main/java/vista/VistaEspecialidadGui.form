@@ -1,13 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="vista.VistaEspecialidad">
-  <grid id="27dc6" row-count="1" column-count="1" layout-manager="BorderLayout">
-    <margin top="0" left="0" bottom="0" right="0"/>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="vista.VistaEspecialidadGui">
+  <grid id="27dc6" binding="panelPrincipal" layout-manager="BorderLayout" hgap="0" vgap="0">
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
-      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
     </constraints>
     <properties/>
     <border type="none"/>
-    <children/>
+    <children>
+      <grid id="ae13f" binding="panelCentro" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="d5777" class="javax.swing.JLabel" binding="lblNombre">
+            <constraints/>
+            <properties>
+              <text value="Nombre:"/>
+            </properties>
+          </component>
+          <component id="b23b4" class="javax.swing.JTextField" binding="jtxNombre">
+            <constraints/>
+            <properties>
+              <columns value="25"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="193ff" binding="panelNorte" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="79990" class="javax.swing.JLabel" binding="lblClave">
+            <constraints/>
+            <properties>
+              <text value="Clave:"/>
+            </properties>
+          </component>
+          <component id="9f0e1" class="javax.swing.JTextField" binding="jtfClave">
+            <constraints/>
+            <properties>
+              <columns value="10"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="300cc" binding="panelSur" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="d7f74" class="javax.swing.JButton" binding="btnNuevo">
+            <constraints/>
+            <properties>
+              <text value="Nuevo"/>
+            </properties>
+          </component>
+          <component id="b6e2a" class="javax.swing.JButton" binding="btnEliminar">
+            <constraints/>
+            <properties>
+              <text value="Eliminar"/>
+            </properties>
+          </component>
+          <component id="fe01" class="javax.swing.JButton" binding="btnGuardar">
+            <constraints/>
+            <properties>
+              <text value="Guardar"/>
+            </properties>
+          </component>
+          <component id="6c722" class="javax.swing.JButton" binding="btnSalir">
+            <constraints/>
+            <properties>
+              <text value="Salir"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
   </grid>
 </form>
